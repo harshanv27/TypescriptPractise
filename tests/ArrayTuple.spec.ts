@@ -1,17 +1,24 @@
 import{test,expect} from "@playwright/test";
 
+// page 3
+
 // Touple means it is a fixed data type and fixed in length.
 // fixed array is called as Touple
 
+// Tuple – A Special Type of Array 
+// A tuple is a fixed-length array where each element has a specific type. 
+// It helps in storing multiple fields of different data types together.
+
 test("touple1", async({page})=>{
 
-//1
+//ex 1
 
-    let data:[string,number]=['Pet',101];
+    let data:[string,number,string]=['Pet',101,'Union'];
+    
 
-    console.log(data[0]);
-    console.log(data[1]);
-    console.log(data);
+    console.log(data[0]); // pet
+    console.log(data[1]);  // 101
+    console.log(data); // ['pet', 101]
 
 //2    
 
@@ -48,9 +55,10 @@ test("touple1", async({page})=>{
 
         if(typeof MixedData[i]==='number'){
 
-          num.push(MixedData[i] + 1);
+
+          num.push(MixedData[i]);  
         }
         
     }
-    console.log(num);
+    console.log(num);  // [11, 12, 13]
 })

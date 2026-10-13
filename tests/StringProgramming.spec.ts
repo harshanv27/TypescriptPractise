@@ -1,25 +1,25 @@
-import{test,expect} from "@playwright/test";
+import { test, expect } from "@playwright/test";
 
-test("Reverse string", async({page})=>{
-    let str:string="Hello";    6
-    let rev:String="";
+test("Reverse string", async ({ page }) => {
+    let str: string = "Hello"; 6
+    let rev: String = "";
 
-    for(let i= str.length-1; i>=0; i--){
-        rev= rev+str[i];
+    for (let i = str.length - 1; i >= 0; i--) {
+        rev = rev + str[i];
     }
 
     console.log("Reverse string is :", rev);
 })
 
-test("Reverse a string", async({page})=>{
+test("Reverse a string", async ({ page }) => {
 
-    let str:string="hello";
+    let str: string = "hello";
 
-    let rev:string="";
+    let rev: string = "";
 
-    for(let i=str.length-1; i>=0; i--){
+    for (let i = str.length - 1; i >= 0; i--) {
 
-        rev=rev+str[i];
+        rev = rev + str[i];
     }
 
     console.log(rev)
@@ -28,125 +28,125 @@ test("Reverse a string", async({page})=>{
 })
 
 
-test("Pallindrom string", async({page})=>{
+test("Pallindrom string", async ({ page }) => {
 
-    let pall:string="level";
-    let outPall:string="";
+    let pall: string = "level";
+    let outPall: string = "";
 
-    for(let i =pall.length-1; i>=0; i--){
+    for (let i = pall.length - 1; i >= 0; i--) {
 
-        outPall=outPall+pall[i];
+        outPall = outPall + pall[i];
     }
 
-    if(pall==outPall){
+    if (pall == outPall) {
         console.log(pall, "is the pallindrom string");
-    }else{
+    } else {
         console.log(pall, "is not a pallindrom string");
     }
 })
 
 
-test("palli string", async({page})=>{
+test("palli string", async ({ page }) => {
 
 
-    let palli:string="level";
-    let outPall:string="";
+    let palli: string = "level";
+    let outPall: string = "";
 
-    for(let i=palli.length-1; i>=0; i--){
+    for (let i = palli.length - 1; i >= 0; i--) {
 
-        outPall=outPall+palli[i]
+        outPall = outPall + palli[i]
     }
 
-    if(palli==outPall){
+    if (palli == outPall) {
 
         console.log(palli, "is the Pallindrom  string")
-    }else{
+    } else {
 
-    console.log(palli, "is the not the Pallindrom  string")
+        console.log(palli, "is the not the Pallindrom  string")
 
     }
 })
 
 
-test("Pallindrom string11", async({page})=>{
+test("Pallindrom string11", async ({ page }) => {
 
-    let pallindrom:string="madam";
+    let pallindrom: string = "madam";
 
-    let rev:string="";
+    let rev: string = "";
 
-    for(let i=pallindrom.length-1; i>=0; i--){
+    for (let i = pallindrom.length - 1; i >= 0; i--) {
 
-        rev=rev+pallindrom[i];
+        rev = rev + pallindrom[i];
     }
 
     console.log(rev)
 })
 
-test("Reverse a string Mahshhsh", async({page})=>{
+test("Reverse a string Mahshhsh", async ({ page }) => {
 
-    let strRev:string="Ajinkya";
+    let strRev: string = "Ajinkya";
 
-    let rev:string="";
+    let rev: string = "";
 
-    for(let i=strRev.length-1; i>=0; i--){
+    for (let i = strRev.length - 1; i >= 0; i--) {
 
-        rev=rev+strRev[i];
+        rev = rev + strRev[i];
     }
 
     console.log(rev);
 })
 
 
-test("Check Pallindrom string", async({page})=>{
+test("Check Pallindrom string", async ({ page }) => {
 
-    let pallistring:string="madam1";
-    let palliOutput:string="";
+    let pallistring: string = "madam1";
+    let palliOutput: string = "";
 
-    for(let i=pallistring.length-1; i>=0; i--){
+    for (let i = pallistring.length - 1; i >= 0; i--) {
 
-        palliOutput=palliOutput+pallistring[i];
+        palliOutput = palliOutput + pallistring[i];
     }
 
-    if(pallistring==palliOutput){
+    if (pallistring == palliOutput) {
 
         console.log(pallistring, "is a Pallindrom string");
-    }else{
+    } else {
 
-         console.log(pallistring, "is a not Pallindrom string");
+        console.log(pallistring, "is a not Pallindrom string");
     }
 
 });
 
 
-test("count vowels from a string", async({page})=>{
+test("count vowels from a string", async ({ page }) => {
 
-    let str:string="automation";
-    let count:number=0;
+    let str: string = "automation";
+    let count: number = 0;
 
-    for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-        if(str[i]=="a" ||
-            str[i]=="e" ||
-            str[i]=="i" ||
-            str[i]=="o" ||
-            str[i]=="u"){
+        if (str[i] == "a" ||
+            str[i] == "e" ||
+            str[i] == "i" ||
+            str[i] == "o" ||
+            str[i] == "u") {
 
-                count++;
+            count++;
+        }
+
     }
-
-}
-console.log("Count Vowels in the string is:", count);
+    console.log("Count Vowels in the string is:", count);
 
 })
 
-test("count consonants in the string is", async({page})=>{
+test("count consonants in the string is", async ({ page }) => {
 
-    let str:string="automation";
+    let str: string = "automation";
 
-    let count:number=0;
+    let count: number = 0;
 
-    for(let i=0; i<=str.length-1; i++){
-        if(!"aeiou".includes(str[i])){
+    for (let i = 0; i <= str.length - 1; i++) {
+        if (!"aeiou".includes(str[i])) {
 
             count++;
         }
@@ -155,19 +155,19 @@ test("count consonants in the string is", async({page})=>{
     console.log("consonants in the string is:", count);
 })
 
-test("Find duplicates in the string is", async({page})=>{
+test("Find duplicates in the string is", async ({ page }) => {
 
-    let str:string="programming";
-    let dup:string=""
+    let str: string = "programming";
+    let dup: string = ""
 
-    for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-        for(let j=i+1; j<=str.length-1; j++){
+        for (let j = i + 1; j <= str.length - 1; j++) {
 
-            if(str[i]===str[j]){
+            if (str[i] === str[j]) {
 
                 console.log("Duplicates in the string is:", str[i]);
-                dup=dup+str[i];
+                dup = dup + str[i];
                 break;
             }
         }
@@ -176,68 +176,68 @@ test("Find duplicates in the string is", async({page})=>{
     console.log("Dupliace string is:", dup);
 })
 
-test("Count vowels from the given string", async({page})=>{
+test("Count vowels from the given string", async ({ page }) => {
 
-    let count:number=0;
+    let count: number = 0;
 
-    let str:string="automation";
+    let str: string = "automation";
 
-    for(let i=str.length-1; i>=0; i--){
+    for (let i = str.length - 1; i >= 0; i--) {
 
-        if(str[i]==='a' || str[i]==='e' || str[i]==="i" || str[i]==="o" || str[i]==="u"){
-
-            count++;
-        } 
-    }
-
-    console.log("Total number of consonents in the string is:",count);
-})
-
-test("Count vowels in the string",async({page})=>{
-
-    let str3:string="welcome";
-    let count:number=0;
-
-    for(let i=str3.length-1; i>=0; i--){
-
-        if(str3[i]=="a" || str3[i]=="e" || str3[i]=="i" || str3[i]=="o" || str3[i]=="u"){
+        if (str[i] === 'a' || str[i] === 'e' || str[i] === "i" || str[i] === "o" || str[i] === "u") {
 
             count++;
         }
     }
 
-    console.log("Vowels in the string is:",count)
+    console.log("Total number of consonents in the string is:", count);
 })
 
-test("consonents in the string is", async({page})=>{
+test("Count vowels in the string", async ({ page }) => {
 
-    let str:string="automation";
-    let count:number=0;
-    for(let i=str.length-1 ; i>=0; i--){
+    let str3: string = "welcome";
+    let count: number = 0;
 
-       if(str[i]>="a" &&
-        str[i]<="z" &&
-        !"aeiou".includes(str[i])
-       ){
-        count++;
+    for (let i = str3.length - 1; i >= 0; i--) {
+
+        if (str3[i] == "a" || str3[i] == "e" || str3[i] == "i" || str3[i] == "o" || str3[i] == "u") {
+
+            count++;
+        }
+    }
+
+    console.log("Vowels in the string is:", count)
+})
+
+test("consonents in the string is", async ({ page }) => {
+
+    let str: string = "automation";
+    let count: number = 0;
+    for (let i = str.length - 1; i >= 0; i--) {
+
+        if (str[i] >= "a" &&
+            str[i] <= "z" &&
+            !"aeiou".includes(str[i])
+        ) {
+            count++;
         }
 
         console.log("Consonents in the string is:", count);
     }
-    
+
 })
 
-test("Duplicate Characters", async({page})=>{
+test("Duplicate Characters", async ({ page }) => {
 
-    let str:string="programming";
+    let str: string = "programming";
 
-    for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-        for(let j=i+1; j<=str.length-1; j++){
+        for (let j = i + 1; j <= str.length - 1; j++) {
 
-            if(str[i]===str[j]){
+            if (str[i] === str[j]) {
 
-                console.log("Duplicate characters in the string is:",str[i]);
+                console.log("Duplicate characters in the string is:", str[i]);
                 break;
             }
         }
@@ -245,103 +245,103 @@ test("Duplicate Characters", async({page})=>{
 })
 
 
-test("Duplicate characters in the string is", async({page})=>{
+test("Duplicate characters in the string is", async ({ page }) => {
 
-let str1:string="automation";
+    let str1: string = "automation";
 
-for(let i=0; i<=str1.length-1; i++){
+    for (let i = 0; i <= str1.length - 1; i++) {
 
-    for(let j=i+1; j<=str1.length-1; j++){
+        for (let j = i + 1; j <= str1.length - 1; j++) {
 
-        if(str1[i]===str1[j]){
+            if (str1[i] === str1[j]) {
 
-            console.log("Duplicate characters in the steing is:", str1[i]);
-            break;
+                console.log("Duplicate characters in the steing is:", str1[i]);
+                break;
+            }
         }
     }
-}
 })
 
-test("Removed Duplicate characters in the string is", async({page})=>{
+test("Removed Duplicate characters in the string is", async ({ page }) => {
 
-let str:string="programming";
-let result:string="";
+    let str: string = "programming";
+    let result: string = "";
 
-for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-    if(!result.includes(str[i])){
+        if (!result.includes(str[i])) {
 
-        result=result+str[i];
+            result = result + str[i];
+        }
     }
-}
 
-console.log(result);
+    console.log(result);
 
 })
 
-test("count vowels in the string is", async({page})=>{
-let str:string="automated";
-let count:number=0;
+test("count vowels in the string is", async ({ page }) => {
+    let str: string = "automated";
+    let count: number = 0;
 
-for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-    if("aeiou".includes(str[i])){
+        if ("aeiou".includes(str[i])) {
 
-        count++;
+            count++;
+        }
     }
-}
 
-console.log("count vowels from the string is:", count);
+    console.log("count vowels from the string is:", count);
 })
 
-test("count consonents in the string is", async({page})=>{
-let str:string="automated";
-let count:number=0;
+test("count consonents in the string is", async ({ page }) => {
+    let str: string = "automated";
+    let count: number = 0;
 
-for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-    if(!"aeiou".includes(str[i])){
+        if (!"aeiou".includes(str[i])) {
 
-        count++;
+            count++;
+        }
     }
-}
 
-console.log("count consonents from the string is:", count);
+    console.log("count consonents from the string is:", count);
 })
 
-test("Removed duplicate Characters", async({page})=>{
+test("Removed duplicate Characters", async ({ page }) => {
 
-    let str:string="programming";
-    let result:string="";
+    let str: string = "programming";
+    let result: string = "";
 
-    for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-        if(!result.includes(str[i])){
+        if (!result.includes(str[i])) {
 
-          
-            result=result+str[i];
+
+            result = result + str[i];
         }
     }
 
     console.log(result);
 })
 
-test("First Non Repeated Characters", async({page})=>{
+test("First Non Repeated Characters", async ({ page }) => {
 
-    let str:string="swiss";
-    let count:number=0;
+    let str: string = "swiss";
+    let count: number = 0;
 
-    for(let i=0; i<=str.length-1; i++){
+    for (let i = 0; i <= str.length - 1; i++) {
 
-        for(let j=0; j<=str.length-1; j++){
+        for (let j = 0; j <= str.length - 1; j++) {
 
-            if(str[i]===str[j]){
+            if (str[i] === str[j]) {
 
                 count++;
             }
         }
 
-        if(count===1){
+        if (count === 1) {
 
             console.log("First non-repeated character:", str[i]);
             break;
@@ -350,26 +350,26 @@ test("First Non Repeated Characters", async({page})=>{
 })
 
 
-test("Reverse words in the string", async({page})=>{
+test("Reverse words in the string", async ({ page }) => {
 
-    let str:string="Hello world QA";
+    let str: string = "Hello world QA";
 
-    let words:string[]=str.split(" "); 
+    let words: string[] = str.split(" ");
 
     console.log(words);  // [ 'Hello', 'world', 'QA' ]
 
-    let result:string="";
+    let result: string = "";
 
-    for(let word of words){
+    for (let word of words) {
 
-        let reverse:string="";
+        let reverse: string = "";
 
-        for(let i=word.length -1; i>=0; i--){
+        for (let i = word.length - 1; i >= 0; i--) {
 
-            reverse=reverse+word[i];
+            reverse = reverse + word[i];
         }
 
-        result=result+reverse+" ";
+        result = result + reverse + " ";
 
     }
 
@@ -378,26 +378,26 @@ test("Reverse words in the string", async({page})=>{
 })
 
 
-test("Reverse string duplicate", async({page})=>{
+test("Reverse string duplicate", async ({ page }) => {
 
-    let str:string="sentense should be proper"; 
+    let str: string = "sentense should be proper";
 
-    let result:string="";
+    let result: string = "";
 
-    let words:string[]=str.split(" ");
+    let words: string[] = str.split(" ");
 
     console.log(words) //[ 'sentense', 'should', 'be', 'proper' ]
 
-    for(let word of words){
+    for (let word of words) {
 
-        let reverse:string="";
+        let reverse: string = "";
 
-        for(let i=word.length-1; i>=0; i--){
+        for (let i = word.length - 1; i >= 0; i--) {
 
-            reverse=reverse+word[i];
+            reverse = reverse + word[i];
         }
 
-        result=result+reverse+" "; 
+        result = result + reverse + " ";
     }
 
     console.log(result);

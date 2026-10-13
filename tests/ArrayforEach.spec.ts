@@ -1,5 +1,9 @@
 import{test,expect} from "@playwright/test";
 
+// Description for forEach: Executes a function once for each array element. 
+// Syntax: 
+// array.forEach(function(element, index, array) {...}) 
+ 
 test("ForEach", async({page})=>{
 
     let num:number[]=[1,2,3,4,5,6];
